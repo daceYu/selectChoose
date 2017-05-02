@@ -1,0 +1,77 @@
+html,body{
+	background: #fff;
+}
+/* 标题、点击对象
+ */
+#year,#month,#date{
+	height: 1rem;
+	line-height:1rem;
+	width: 30%;
+	text-align:center;
+	font-size: 0.5rem;
+	border:thin solid red;
+	float: left;
+	margin-left: 2.5%;
+	margin-top: 0.5rem;
+}
+header{
+	height: 1.2rem;
+	line-height: 1.2rem;
+	width: 100%;
+	text-align: center;
+	font-size: 0.6rem;
+	background: #f5f5f5;
+}
+
+/* 弹框背景
+*/
+.dialogBg{
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9;
+}
+/* 弹框/滚动区域
+*/
+.dialog{
+	height: 5rem;
+	width: 100%;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 11;
+}
+.dialog ul{
+	min-height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.dialog ul li{
+	height: 1rem;
+	line-height: 1rem;
+	width: 100%;
+	text-align: center;
+	font-size: 0.5rem;
+}
+
+.dialog section{
+	position: absolute;
+	height: 1rem;
+	box-sizing: border-box;
+	border-top:thin solid red;
+	border-bottom:thin solid red;
+	top: 50%;
+	left: 0;
+	margin-top: -0.5rem;
+}
+.active{
+	color: #fe5722;
+}
+
